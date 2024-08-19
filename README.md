@@ -4,24 +4,6 @@ Robot Framework é um framework de automação de código aberto para automaçã
 
 Documentação: https://robotframework.org/
 
-Installing Robot Framework with pip is simple:
+https://github.com/cunhafrederico/robot-realworld
 
-Isolar o ambiente:
-
-```bash
-python3 -m venv ./venv && source venv/bin/activate
-```
-
-Instalação
-
-```bash
-pip install robotframework
-```
-
-To check that the installation was successful, run
-
-```bash
-robot --version
-
-Robot Framework 7.0.1 (Python 3.10.12 on linux)
-```
+Próximo passo... [Install](install.md)

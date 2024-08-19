@@ -1,0 +1,14 @@
+#container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+button {
+    color: #faf9f9;
+}
