@@ -21,3 +21,5 @@ Cenário 1: Acessando o site do Robot
 ```bash
 robot <nome do arquivo.robot>
 ```
+
+Próximo passo...[Projeto local](./projetos/local)
