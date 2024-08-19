@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-08-19T18:55:52.390082" rpa="false" schemaversion="5">
+<suite id="s1" name="Local" source="/home/rfahham/projetos/robot-framework/projetos/local/local.robot">
+<test id="s1-t1" name="Cenário 1: Formulário" line="32">
+<kw name="Abrir Site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-19T18:55:52.569660" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:5500/projetos/local/index.html'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-19T18:55:52.569354" elapsed="0.638184"/>
+</kw>
+<status status="PASS" start="2024-08-19T18:55:52.568526" elapsed="0.639295"/>
+</kw>
+<kw name="Escolher um ítem da lista">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T18:55:53.209490" level="INFO">Clicking element '//*[@id="select-itens"]/option[2]'.</msg>
+<arg>//*[@id="select-itens"]/option[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T18:55:53.208767" elapsed="0.049781"/>
+</kw>
+<status status="PASS" start="2024-08-19T18:55:53.208251" elapsed="0.050457"/>
+</kw>
+<kw name="Digitar algo sobre você">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T18:55:53.260340" level="INFO">Typing text 'Meu nome é Ricardo Fahham' into text field '//*[@id="area"]'.</msg>
+<arg>//*[@id="area"]</arg>
+<arg>text=Meu nome é Ricardo Fahham</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T18:55:53.259672" elapsed="0.125910"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-19T18:55:58.386166" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-19T18:55:53.385792" elapsed="5.000531"/>
+</kw>
+<status status="PASS" start="2024-08-19T18:55:53.259084" elapsed="5.127445"/>
+</kw>
+<kw name="Inserir Dados Pessoais">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T18:55:58.387628" level="INFO">Typing text 'Ricardo Fahham' into text field '//input[@placeholder="Digite seu nome"]'.</msg>
+<arg>//input[@placeholder="Digite seu nome"]</arg>
+<arg>Ricardo Fahham</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T18:55:58.387343" elapsed="0.127470"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T18:55:58.515757" level="INFO">Typing text '53' into text field '//input[@placeholder="Digite sua idade"]'.</msg>
+<arg>//input[@placeholder="Digite sua idade"]</arg>
+<arg>53</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T18:55:58.515202" elapsed="0.109770"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T18:55:58.625465" level="INFO">Typing text 'Rio de Janeiro' into text field '//input[@placeholder="Digite onde nasceu"]'.</msg>
+<arg>//input[@placeholder="Digite onde nasceu"]</arg>
+<arg>Rio de Janeiro</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T18:55:58.625204" elapsed="0.118367"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-19T18:56:03.744071" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-19T18:55:58.743780" elapsed="5.000440"/>
+</kw>
+<status status="PASS" start="2024-08-19T18:55:58.386939" elapsed="5.357467"/>
+</kw>
+<kw name="Clicar em Acessar">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T18:56:03.745424" level="INFO">Clicking element '//button'.</msg>
+<arg>//button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T18:56:03.745156" elapsed="0.077068"/>
+</kw>
+<status status="PASS" start="2024-08-19T18:56:03.744791" elapsed="0.077731"/>
+</kw>
+<kw name="Fechar Site">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-19T18:56:03.824114" elapsed="0.070108"/>
+</kw>
+<status status="PASS" start="2024-08-19T18:56:03.823056" elapsed="0.071546"/>
+</kw>
+<status status="PASS" start="2024-08-19T18:55:52.567884" elapsed="11.327195"/>
+</test>
+<status status="PASS" start="2024-08-19T18:55:52.391391" elapsed="11.505242"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Local">Local</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

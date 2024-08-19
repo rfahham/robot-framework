@@ -25,6 +25,9 @@ Inserir Dados Pessoais
 Clicar em Acessar
     Click Element   //button
 
+Fechar Site
+    Close Browser
+
 ** Test Cases **
 Cenário 1: Formulário
     Abrir Site
@@ -32,3 +35,4 @@ Cenário 1: Formulário
     Digitar algo sobre você
     Inserir Dados Pessoais
     Clicar em Acessar
+    Fechar Site
