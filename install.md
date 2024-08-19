@@ -75,6 +75,14 @@ Instalar as bibliotecas a partir do arquivo
 pip install requirements.txt
 ```
 
+## Instalando o webdriver
+
+Ele que faz a manipulação do browser
+
+```bash
+pip install webdriver-manager 
+```
+
 ## Extensão do VSCODE
 
 Robot Framework Intellisense
