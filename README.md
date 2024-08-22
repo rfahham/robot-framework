@@ -6,4 +6,11 @@ Documentação: https://robotframework.org/
 
 https://github.com/cunhafrederico/robot-realworld
 
+Palavras reservadas BDD
+
+    Given
+    When
+    And
+    Then
+
 Próximo passo... [Install](install.md)

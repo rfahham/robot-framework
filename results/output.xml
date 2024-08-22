@@ -1,100 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-08-19T18:56:12.268064" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-08-22T13:48:10.209982" rpa="false" schemaversion="5">
 <suite id="s1" name="Robot-Framework" source="/home/rfahham/projetos/robot-framework">
 <suite id="s1-s1" name="Projetos" source="/home/rfahham/projetos/robot-framework/projetos">
-<suite id="s1-s1-s1" name="Local" source="/home/rfahham/projetos/robot-framework/projetos/local">
-<suite id="s1-s1-s1-s1" name="Local" source="/home/rfahham/projetos/robot-framework/projetos/local/local.robot">
-<test id="s1-s1-s1-s1-t1" name="Cenário 1: Formulário" line="32">
-<kw name="Abrir Site">
+<suite id="s1-s1-s1" name="Youtube" source="/home/rfahham/projetos/robot-framework/projetos/youtube">
+<suite id="s1-s1-s1-s1" name="Youtube" source="/home/rfahham/projetos/robot-framework/projetos/youtube/youtube.robot">
+<test id="s1-s1-s1-s1-t1" name="Cenário 1: Executar vídeo do site do youtube" line="38">
+<kw name="Given access youtube site">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-08-19T18:56:12.491439" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:5500/projetos/local/index.html'.</msg>
+<msg time="2024-08-22T13:48:10.408087" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
 <arg>${url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-08-19T18:56:12.490953" elapsed="0.631922"/>
-</kw>
-<status status="PASS" start="2024-08-19T18:56:12.489907" elapsed="0.633482"/>
-</kw>
-<kw name="Escolher um ítem da lista">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-08-19T18:56:13.127476" level="INFO">Clicking element '//*[@id="select-itens"]/option[2]'.</msg>
-<arg>//*[@id="select-itens"]/option[2]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-19T18:56:13.126191" elapsed="0.048742"/>
-</kw>
-<status status="PASS" start="2024-08-19T18:56:13.124421" elapsed="0.050891"/>
-</kw>
-<kw name="Digitar algo sobre você">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-19T18:56:13.176707" level="INFO">Typing text 'Meu nome é Ricardo Fahham' into text field '//*[@id="area"]'.</msg>
-<arg>//*[@id="area"]</arg>
-<arg>text=Meu nome é Ricardo Fahham</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-19T18:56:13.176298" elapsed="0.158710"/>
+<status status="PASS" start="2024-08-22T13:48:10.407286" elapsed="4.562159"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-08-19T18:56:18.335802" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-08-22T13:48:19.970959" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-08-19T18:56:13.335298" elapsed="5.000902"/>
+<status status="PASS" start="2024-08-22T13:48:14.969944" elapsed="5.001633"/>
 </kw>
-<status status="PASS" start="2024-08-19T18:56:13.175809" elapsed="5.160735"/>
+<status status="PASS" start="2024-08-22T13:48:10.405931" elapsed="9.566161"/>
 </kw>
-<kw name="Inserir Dados Pessoais">
+<kw name="When search for video name">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-19T18:56:18.339888" level="INFO">Typing text 'Ricardo Fahham' into text field '//input[@placeholder="Digite seu nome"]'.</msg>
-<arg>//input[@placeholder="Digite seu nome"]</arg>
-<arg>Ricardo Fahham</arg>
+<msg time="2024-08-22T13:48:19.976116" level="INFO">Typing text 'daily working routine Lofi' into text field '//input[@id="search"]'.</msg>
+<arg>//input[@id="search"]</arg>
+<arg>daily working routine Lofi</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-19T18:56:18.339423" elapsed="0.145174"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-19T18:56:18.485270" level="INFO">Typing text '53' into text field '//input[@placeholder="Digite sua idade"]'.</msg>
-<arg>//input[@placeholder="Digite sua idade"]</arg>
-<arg>53</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-19T18:56:18.484912" elapsed="0.110535"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-19T18:56:18.596231" level="INFO">Typing text 'Rio de Janeiro' into text field '//input[@placeholder="Digite onde nasceu"]'.</msg>
-<arg>//input[@placeholder="Digite onde nasceu"]</arg>
-<arg>Rio de Janeiro</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-19T18:56:18.595833" elapsed="0.119059"/>
+<status status="PASS" start="2024-08-22T13:48:19.974670" elapsed="0.317282"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-08-19T18:56:23.715781" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-08-22T13:48:25.293180" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-08-19T18:56:18.715177" elapsed="5.001146"/>
+<status status="PASS" start="2024-08-22T13:48:20.292431" elapsed="5.001283"/>
 </kw>
-<status status="PASS" start="2024-08-19T18:56:18.338274" elapsed="5.378285"/>
+<status status="PASS" start="2024-08-22T13:48:19.973439" elapsed="5.320633"/>
 </kw>
-<kw name="Clicar em Acessar">
+<kw name="And click in button search">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-08-19T18:56:23.718062" level="INFO">Clicking element '//button'.</msg>
-<arg>//button</arg>
+<msg time="2024-08-22T13:48:25.296886" level="INFO">Clicking element '//*[@id="search-icon-legacy"]'.</msg>
+<arg>${Button_pesquisar}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-19T18:56:23.717701" elapsed="0.076002"/>
+<status status="PASS" start="2024-08-22T13:48:25.296296" elapsed="0.193892"/>
 </kw>
-<status status="PASS" start="2024-08-19T18:56:23.717207" elapsed="0.076794"/>
+<status status="PASS" start="2024-08-22T13:48:25.295288" elapsed="0.195535"/>
 </kw>
-<kw name="Fechar Site">
+<kw name="And click in first option">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${video}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-22T13:48:25.492827" elapsed="1.549205"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-22T13:48:27.043625" level="INFO">Clicking element '(//yt-formatted-string[@class="style-scope ytd-video-renderer"])[1]'.</msg>
+<arg>${video}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-22T13:48:27.042686" elapsed="0.322057"/>
+</kw>
+<status status="PASS" start="2024-08-22T13:48:25.491697" elapsed="1.873297"/>
+</kw>
+<kw name="Then the video is play">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-22T13:48:47.366750" level="INFO">Slept 20 seconds.</msg>
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-22T13:48:27.366151" elapsed="20.001022"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${verificação}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-22T13:48:47.367603" elapsed="0.064460"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-08-22T13:48:47.478148" level="INFO">Element '//*[@id="owner-sub-count"][contains(text(), "subscribers")]' is displayed.</msg>
+<arg>${verificação}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-22T13:48:47.432546" elapsed="0.046500"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-22T13:49:07.481456" level="INFO">Slept 20 seconds.</msg>
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-22T13:48:47.479606" elapsed="20.002352"/>
+</kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-08-19T18:56:23.795660" elapsed="0.069006"/>
+<status status="PASS" start="2024-08-22T13:49:07.482385" elapsed="0.133501"/>
 </kw>
-<status status="PASS" start="2024-08-19T18:56:23.794557" elapsed="0.070587"/>
+<status status="PASS" start="2024-08-22T13:48:27.365375" elapsed="40.251044"/>
 </kw>
-<status status="PASS" start="2024-08-19T18:56:12.489009" elapsed="11.376813"/>
+<status status="PASS" start="2024-08-22T13:48:10.404047" elapsed="57.213981"/>
 </test>
-<status status="PASS" start="2024-08-19T18:56:12.311702" elapsed="11.556356"/>
+<status status="PASS" start="2024-08-22T13:48:10.258990" elapsed="57.362714"/>
 </suite>
-<status status="PASS" start="2024-08-19T18:56:12.308839" elapsed="11.562050"/>
+<status status="PASS" start="2024-08-22T13:48:10.254178" elapsed="57.372771"/>
 </suite>
-<status status="PASS" start="2024-08-19T18:56:12.306855" elapsed="11.566670"/>
+<status status="PASS" start="2024-08-22T13:48:10.249990" elapsed="57.380488"/>
 </suite>
-<status status="PASS" start="2024-08-19T18:56:12.283098" elapsed="11.593198"/>
+<status status="PASS" start="2024-08-22T13:48:10.225249" elapsed="57.410966"/>
 </suite>
 <statistics>
 <total>
@@ -105,8 +111,8 @@
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Robot-Framework">Robot-Framework</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1" name="Projetos">Robot-Framework.Projetos</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Local">Robot-Framework.Projetos.Local</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Local">Robot-Framework.Projetos.Local.Local</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Youtube">Robot-Framework.Projetos.Youtube</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Youtube">Robot-Framework.Projetos.Youtube.Youtube</stat>
 </suite>
 </statistics>
 <errors>
