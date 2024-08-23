@@ -13,7 +13,7 @@ Python 3.10.12
 
 ## Instalar o PIP
 
-[Página de instalação do PIP](https://pip.pypa.io/en/stable/installation/#)
+[Página de instalação do PIP](https://awari.com.br/instalar-pip-python-aprenda-como-utilizar-essa-poderosa-ferramenta-de-gerenciamento-de-pacotes-no-python/)
 
 Verificar a versão
 

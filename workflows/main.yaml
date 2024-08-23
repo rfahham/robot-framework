@@ -1,0 +1,30 @@
+name: Continuos Integration
+
+# on: pull_request
+# on: [pull_request, push, issues, issue_comment]
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  Continuos-Integration:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copiando o código para ser executado
+        uses: actions/checkout@v4
+
+      - name: Instalação
+        run: |
+          sudo apt-get update
+          sudo apt-get install python3
+          python3 --version
+          
+          # sudo python -m ensurepip --default-pip
+          # pip --version
+          # sudo pip install robotframework
+          # robot --version
+          # pip install robotframework-seleniumlibrary
+          # pip install webdriver-manager
+          # pip list

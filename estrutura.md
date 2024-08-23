@@ -22,4 +22,4 @@ Cenário 1: Acessando o site do Robot
 robot <nome do arquivo.robot>
 ```
 
-Próximo passo...[Projeto local](./projetos/local)
+Próximo passo...[Executando Testes](exec.md)

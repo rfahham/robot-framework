@@ -13,4 +13,10 @@ Palavras reservadas BDD
     And
     Then
 
+Criando pasta com os Resultados
+
+```bash
+robot -d results <nome do projeto>
+```
+
 Próximo passo... [Install](install.md)
