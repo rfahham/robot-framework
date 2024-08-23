@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-08-23T09:20:07.864950" rpa="false" schemaversion="5">
+<suite id="s1" name="Youtube" source="/home/rfahham/projetos/robot-framework/projetos/youtube-bdd/youtube.robot">
+<test id="s1-t1" name="Cenário 1: Executar vídeo do site do youtube" line="38">
+<kw name="Given access youtube site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-23T09:20:08.144901" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-23T09:20:08.144365" elapsed="4.968685"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-23T09:20:18.114806" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-23T09:20:13.113617" elapsed="5.001623"/>
+</kw>
+<status status="PASS" start="2024-08-23T09:20:08.143087" elapsed="9.972782"/>
+</kw>
+<kw name="When search for video name">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-23T09:20:18.122261" level="INFO">Typing text 'daily working routine Lofi' into text field '//input[@id="search"]'.</msg>
+<arg>${Input_pesquisa}</arg>
+<arg>${nome_video}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-23T09:20:18.118937" elapsed="0.211763"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-23T09:20:23.331296" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-23T09:20:18.330952" elapsed="5.000468"/>
+</kw>
+<status status="PASS" start="2024-08-23T09:20:18.117192" elapsed="5.214353"/>
+</kw>
+<kw name="And click in button search">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-23T09:20:23.332383" level="INFO">Clicking element '//*[@id="search-icon-legacy"]'.</msg>
+<arg>${Button_pesquisar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-23T09:20:23.332154" elapsed="0.132703"/>
+</kw>
+<status status="PASS" start="2024-08-23T09:20:23.331837" elapsed="0.133298"/>
+</kw>
+<kw name="And click in first option">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${video}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-23T09:20:23.466137" elapsed="1.319168"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-23T09:20:24.786298" level="INFO">Clicking element '(//yt-formatted-string[@class="style-scope ytd-video-renderer"])[1]'.</msg>
+<arg>${video}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-23T09:20:24.785734" elapsed="0.256489"/>
+</kw>
+<status status="PASS" start="2024-08-23T09:20:23.465640" elapsed="1.576821"/>
+</kw>
+<kw name="Then the video is play">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-23T09:20:45.044786" level="INFO">Slept 20 seconds.</msg>
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-23T09:20:25.044111" elapsed="20.001036"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${verificação}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-23T09:20:45.045701" elapsed="0.040593"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-08-23T09:20:45.113908" level="INFO">Element '//*[@id="owner-sub-count"][contains(text(), "subscribers")]' is displayed.</msg>
+<arg>${verificação}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-23T09:20:45.086505" elapsed="0.027641"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-23T09:21:05.115302" level="INFO">Slept 20 seconds.</msg>
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-23T09:20:45.114582" elapsed="20.000998"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-23T09:21:05.116000" elapsed="0.161658"/>
+</kw>
+<status status="PASS" start="2024-08-23T09:20:25.042992" elapsed="40.234829"/>
+</kw>
+<status status="PASS" start="2024-08-23T09:20:08.141566" elapsed="57.136505"/>
+</test>
+<status status="PASS" start="2024-08-23T09:20:07.865898" elapsed="57.412739"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Youtube">Youtube</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

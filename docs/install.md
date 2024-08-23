@@ -57,30 +57,32 @@ Robot Framework 7.0.1 (Python 3.10.12 on linux)
 pip install robotframework-seleniumlibrary
 ```
 
-Listar as bibliotecas
+## Instalando o webdriver
+
+Ele que faz a manipulação do browser
+
+https://pypi.org/project/webdriver-manager/3.0.0/
+
+```bash
+pip install webdriver-manager 
+```
+
+## Listar as bibliotecas
 
 ```bash
 pip list
 ```
 
-Salvar a lista em um arquivo
+## Salvar a lista em um arquivo
 
 ```bash
 pip freeze > requirements.txt
 ```
 
-Instalar as bibliotecas a partir do arquivo
+## Instalar as bibliotecas a partir do arquivo
 
 ```bash
 pip install requirements.txt
-```
-
-## Instalando o webdriver
-
-Ele que faz a manipulação do browser
-
-```bash
-pip install webdriver-manager 
 ```
 
 ## Extensão do VSCODE

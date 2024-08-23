@@ -33,8 +33,9 @@ jobs:
           echo "-----------------------"
           echo "Instalação do ROBOT !!!"
           echo "-----------------------"
-          sudo pip install robotframework
+          pip install robotframework
           robot --version
+          
           # pip install robotframework-seleniumlibrary
           # pip install webdriver-manager
           # pip list
