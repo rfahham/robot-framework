@@ -18,9 +18,16 @@ jobs:
       - name: Instalação
         run: |
           sudo apt-get update
+          echo "------------------------"
+          echo "Instalação do PYTHON !!!"
+          echo "------------------------"
           sudo apt install python3
+          echo "Versão do Python: "
           python3 --version
           
+          echo "---------------------"
+          echo "Instalação do PIP !!!"
+          echo "---------------------"
           sudo python3 -m ensurepip --default-pip
           pip --version
 
