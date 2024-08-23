@@ -18,31 +18,10 @@ jobs:
       - name: Instalação
         run: |
           sudo apt-get update
-          echo "------------------------"
-          echo "Instalação do PYTHON !!!"
-          echo "------------------------"
           sudo apt install python3
-          echo "Versão do Python: "
-          python3 --version
-          
-          echo "---------------------"
-          echo "Instalação do PIP !!!"
-          echo "---------------------"
-          pip --version
-
-          echo "-----------------------"
-          echo "Instalação do ROBOT !!!"
-          echo "-----------------------"
           pip install robotframework
-          
-          echo "--------------------------------"
-          echo "Instalação do ROBOTFRAMEWORK !!!"
-          echo "--------------------------------"
           pip install robotframework-seleniumlibrary
-          
-          echo "-----------------------"
-          echo "Instalação do ROBOT !!!"
-          echo "-----------------------"
           pip install webdriver-manager
+          robot youtube.robot
 
-          pip list
+
