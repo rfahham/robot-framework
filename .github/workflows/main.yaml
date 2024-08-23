@@ -34,8 +34,15 @@ jobs:
           echo "Instalação do ROBOT !!!"
           echo "-----------------------"
           pip install robotframework
-          robot --version
           
+          echo "--------------------------------"
+          echo "Instalação do ROBOTFRAMEWORK !!!"
+          echo "--------------------------------"
           pip install robotframework-seleniumlibrary
+          
+          echo "-----------------------"
+          echo "Instalação do ROBOT !!!"
+          echo "-----------------------"
           pip install webdriver-manager
+
           pip list
