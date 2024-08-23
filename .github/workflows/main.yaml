@@ -28,14 +28,13 @@ jobs:
           echo "---------------------"
           echo "Instalação do PIP !!!"
           echo "---------------------"
-          # sudo python3 -m ensurepip --default-pip
           pip --version
 
           echo "-----------------------"
           echo "Instalação do ROBOT !!!"
           echo "-----------------------"
-          # sudo pip install robotframework
-          # robot --version
+          sudo pip install robotframework
+          robot --version
           # pip install robotframework-seleniumlibrary
           # pip install webdriver-manager
           # pip list
