@@ -21,8 +21,9 @@ jobs:
           sudo apt-get install python3
           python3 --version
           
-          # sudo python -m ensurepip --default-pip
-          # pip --version
+          sudo python -m ensurepip --default-pip
+          pip --version
+          
           # sudo pip install robotframework
           # robot --version
           # pip install robotframework-seleniumlibrary
