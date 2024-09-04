@@ -57,6 +57,12 @@ Robot Framework 7.0.1 (Python 3.10.12 on linux)
 pip install robotframework-seleniumlibrary
 ```
 
+## Database Library
+
+```bash
+pip install robotframework-databaselibrary
+```
+
 ## Instalando o webdriver
 
 Ele que faz a manipulação do browser
@@ -64,7 +70,7 @@ Ele que faz a manipulação do browser
 https://pypi.org/project/webdriver-manager/3.0.0/
 
 ```bash
-pip install webdriver-manager 
+sudo pip install webdriver-manager 
 ```
 
 ## Listar as bibliotecas

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-08-30T13:32:34.645223" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.8.10 on linux)" generated="2024-09-03T22:20:05.137125" rpa="false" schemaversion="5">
 <suite id="s1" name="Robot-Framework" source="/home/rfahham/projetos/robot-framework">
 <suite id="s1-s1" name="Projetos" source="/home/rfahham/projetos/robot-framework/projetos">
 <suite id="s1-s1-s1" name="Tjmsp" source="/home/rfahham/projetos/robot-framework/projetos/tjmsp">
@@ -7,88 +7,82 @@
 <test id="s1-s1-s1-s1-t1" name="Cenário 1: Consulta de Processos" line="34">
 <kw name="Acessar a home">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-08-30T13:32:34.822062" level="INFO">Opening browser 'chrome' to base url 'https://ww2.tjmsp.jus.br/p_processos.htm'.</msg>
+<msg time="2024-09-03T22:20:05.428265" level="INFO">Opening browser 'chrome' to base url 'https://ww2.tjmsp.jus.br/p_processos.htm'.</msg>
 <arg>${url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-08-30T13:32:34.821512" elapsed="4.863262"/>
+<status status="PASS" start="2024-09-03T22:20:05.426871" elapsed="2.787078"/>
 </kw>
-<status status="PASS" start="2024-08-30T13:32:34.820317" elapsed="4.864788"/>
+<status status="PASS" start="2024-09-03T22:20:05.425170" elapsed="2.789524"/>
 </kw>
 <kw name="Clicar Botão Advogados">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-08-30T13:32:39.686512" level="INFO">Clicking element '//*[@id="home"]/div[2]/div/div[4]/div/button[2]'.</msg>
+<msg time="2024-09-03T22:20:08.217108" level="INFO">Clicking element '//*[@id="home"]/div[2]/div/div[4]/div/button[2]'.</msg>
 <arg>${Advogados}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-30T13:32:39.685939" elapsed="3.103601"/>
+<status status="PASS" start="2024-09-03T22:20:08.216207" elapsed="3.104095"/>
 </kw>
-<status status="PASS" start="2024-08-30T13:32:39.685482" elapsed="3.104891"/>
+<status status="PASS" start="2024-09-03T22:20:08.215380" elapsed="3.105310"/>
 </kw>
 <kw name="Clicar no Nro. da OAB">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-08-30T13:32:42.792608" level="INFO">Clicking element '//*[@id="home"]/div[2]/div/div[4]/div[1]/button[1]'.</msg>
+<msg time="2024-09-03T22:20:11.322702" level="INFO">Clicking element '//*[@id="home"]/div[2]/div/div[4]/div[1]/button[1]'.</msg>
 <arg>${oab}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-30T13:32:42.792092" elapsed="0.066399"/>
+<status status="PASS" start="2024-09-03T22:20:11.321815" elapsed="0.093207"/>
 </kw>
-<status status="PASS" start="2024-08-30T13:32:42.791335" elapsed="0.067505"/>
+<status status="PASS" start="2024-09-03T22:20:11.321174" elapsed="0.094220"/>
 </kw>
 <kw name="Clicar em Número da OAB">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-30T13:32:42.861126" level="INFO">Typing text '96259' into text field '//*[@id="txt_nro_oab"]'.</msg>
+<msg time="2024-09-03T22:20:11.417063" level="INFO">Typing text '123456' into text field '//*[@id="txt_nro_oab"]'.</msg>
 <arg>//*[@id="txt_nro_oab"]</arg>
-<arg>96259</arg>
+<arg>${numero-oab}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-30T13:32:42.860218" elapsed="0.122764"/>
+<status status="PASS" start="2024-09-03T22:20:11.416500" elapsed="0.171045"/>
 </kw>
-<status status="PASS" start="2024-08-30T13:32:42.859364" elapsed="0.123870"/>
+<status status="PASS" start="2024-09-03T22:20:11.415886" elapsed="0.172017"/>
 </kw>
 <kw name="Escolher Estado">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-08-30T13:32:42.985129" level="INFO">Clicking element '//*[@id="psq_oab"]/div[4]/div/select/option[20]'.</msg>
+<msg time="2024-09-03T22:20:11.590359" level="INFO">Clicking element '//*[@id="psq_oab"]/div[4]/div/select/option[20]'.</msg>
 <arg>//*[@id="psq_oab"]/div[4]/div/select/option[20]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-30T13:32:42.984537" elapsed="0.043332"/>
+<status status="PASS" start="2024-09-03T22:20:11.588927" elapsed="0.055593"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-08-30T13:32:48.028818" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-08-30T13:32:43.028178" elapsed="5.001362"/>
-</kw>
-<status status="PASS" start="2024-08-30T13:32:42.983792" elapsed="5.046347"/>
+<status status="PASS" start="2024-09-03T22:20:11.588379" elapsed="0.056539"/>
 </kw>
 <kw name="Clicar botão Enviar">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-08-30T13:32:48.033117" level="INFO">Clicking element '//*[@id="btn_enviar"]'.</msg>
+<msg time="2024-09-03T22:20:11.646581" level="INFO">Clicking element '//*[@id="btn_enviar"]'.</msg>
 <arg>//*[@id="btn_enviar"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-30T13:32:48.032481" elapsed="0.123166"/>
+<status status="PASS" start="2024-09-03T22:20:11.646110" elapsed="0.142446"/>
 </kw>
-<status status="PASS" start="2024-08-30T13:32:48.031562" elapsed="0.124448"/>
+<status status="PASS" start="2024-09-03T22:20:11.645379" elapsed="0.143580"/>
 </kw>
 <kw name="Verificação">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-08-30T13:32:48.217658" level="INFO">Element '//html/body[contains(text(), "The page cannot be displayed because an internal server error has occurred.")]' is displayed.</msg>
+<msg time="2024-09-03T22:20:11.824572" level="INFO">Element '//html/body[contains(text(), "The page cannot be displayed because an internal server error has occurred.")]' is displayed.</msg>
 <arg>${verificação}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-08-30T13:32:48.157435" elapsed="0.060670"/>
+<status status="PASS" start="2024-09-03T22:20:11.791213" elapsed="0.034767"/>
 </kw>
-<status status="PASS" start="2024-08-30T13:32:48.156671" elapsed="0.061996"/>
+<status status="PASS" start="2024-09-03T22:20:11.789859" elapsed="0.036620"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-08-30T13:32:48.219559" elapsed="0.086105"/>
+<status status="PASS" start="2024-09-03T22:20:11.827529" elapsed="0.086506"/>
 </kw>
-<status status="PASS" start="2024-08-30T13:32:34.818998" elapsed="13.487680"/>
+<status status="PASS" start="2024-09-03T22:20:05.421950" elapsed="6.492938"/>
 </test>
-<status status="PASS" start="2024-08-30T13:32:34.690487" elapsed="13.622686"/>
+<status status="PASS" start="2024-09-03T22:20:05.199332" elapsed="6.718529"/>
 </suite>
-<status status="PASS" start="2024-08-30T13:32:34.687468" elapsed="13.629007"/>
+<status status="PASS" start="2024-09-03T22:20:05.188963" elapsed="6.744235"/>
 </suite>
-<status status="PASS" start="2024-08-30T13:32:34.683684" elapsed="13.636066"/>
+<status status="PASS" start="2024-09-03T22:20:05.183073" elapsed="6.754822"/>
 </suite>
-<status status="PASS" start="2024-08-30T13:32:34.648675" elapsed="13.674895"/>
+<status status="PASS" start="2024-09-03T22:20:05.142258" elapsed="6.798116"/>
 </suite>
 <statistics>
 <total>

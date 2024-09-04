@@ -1,5 +1,7 @@
 # Testes Automatizados de Banco de Dados com Robot Framework.
 
+Banco Postgres
+
 Entendendo o Código:
 
 1. Definindo as Configurações Básicas
