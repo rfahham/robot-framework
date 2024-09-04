@@ -5,7 +5,7 @@
 <kw name="Abrir Site">
 <kw name="Open Browser" owner="SeleniumLibrary">
 <msg time="2024-08-19T17:30:00.888014" level="INFO">Opening browser 'chrome' to base url 'https://sandbox.moodledemo.net/login/index.php'.</msg>
-<arg>${url}</arg>
+<arg>--{url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <status status="PASS" start="2024-08-19T17:30:00.887727" elapsed="8.261824"/>
@@ -15,14 +15,14 @@
 <kw name="Preencher campos">
 <kw name="Input Text" owner="SeleniumLibrary">
 <msg time="2024-08-19T17:30:09.151312" level="INFO">Typing text 'admin' into text field 'name:username'.</msg>
-<arg>${input_username}</arg>
+<arg>--{input_username}</arg>
 <arg>admin</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <status status="PASS" start="2024-08-19T17:30:09.150604" elapsed="0.189786"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <msg time="2024-08-19T17:30:09.342165" level="INFO">Typing text 'sandbox' into text field 'name:password'.</msg>
-<arg>${input_password}</arg>
+<arg>--{input_password}</arg>
 <arg>sandbox</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <status status="PASS" start="2024-08-19T17:30:09.341611" elapsed="0.129726"/>
@@ -32,7 +32,7 @@
 <kw name="Clicar em Acessar">
 <kw name="Click Element" owner="SeleniumLibrary">
 <msg time="2024-08-19T17:30:09.474473" level="INFO">Clicking element 'id:loginbtn'.</msg>
-<arg>${button_Acessar}</arg>
+<arg>--{button_Acessar}</arg>
 <doc>Click the element identified by ``locator``.</doc>
 <status status="PASS" start="2024-08-19T17:30:09.472766" elapsed="1.314889"/>
 </kw>
@@ -47,13 +47,13 @@
 <kw name="Clicar em Logout">
 <kw name="Click Element" owner="SeleniumLibrary">
 <msg time="2024-08-19T17:30:20.789644" level="INFO">Clicking element 'id:user-menu-toggle'.</msg>
-<arg>${button_user_menu_toggle}</arg>
+<arg>--{button_user_menu_toggle}</arg>
 <doc>Click the element identified by ``locator``.</doc>
 <status status="PASS" start="2024-08-19T17:30:20.789419" elapsed="0.085756"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <msg time="2024-08-19T17:30:20.875717" level="INFO">Clicking element '//*[@id="carousel-item-main"]/a[10]'.</msg>
-<arg>${button_Logout}</arg>
+<arg>--{button_Logout}</arg>
 <doc>Click the element identified by ``locator``.</doc>
 <status status="PASS" start="2024-08-19T17:30:20.875416" elapsed="0.717496"/>
 </kw>

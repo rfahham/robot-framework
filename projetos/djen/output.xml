@@ -5,7 +5,7 @@
 <kw name="Acessar a home">
 <kw name="Open Browser" owner="SeleniumLibrary">
 <msg time="2024-08-30T11:52:42.827461" level="INFO">Opening browser 'chrome' to base url 'https://www.tjmsp.jus.br/diario-de-justica-eletronico-nacional-djen/'.</msg>
-<arg>${url}</arg>
+<arg>--{url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <status status="PASS" start="2024-08-30T11:52:42.827213" elapsed="3.607456"/>

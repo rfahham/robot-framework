@@ -8,7 +8,7 @@
 <kw name="Open Google site">
 <kw name="Open Browser" owner="SeleniumLibrary">
 <msg time="2024-08-22T16:42:50.126792" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
-<arg>${url_google}</arg>
+<arg>--{url_google}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <status status="PASS" start="2024-08-22T16:42:50.126272" elapsed="3.267276"/>

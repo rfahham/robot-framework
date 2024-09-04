@@ -5,7 +5,7 @@
 <kw name="Abrir Site">
 <kw name="Open Browser" owner="SeleniumLibrary">
 <msg time="2024-08-16T16:21:15.422980" level="INFO">Opening browser 'chrome' to base url 'https://sandbox.moodledemo.net/login/index.php'.</msg>
-<arg>${url}</arg>
+<arg>--{url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <status status="PASS" start="2024-08-16T16:21:15.422726" elapsed="6.832943"/>
@@ -15,14 +15,14 @@
 <kw name="Preencher campos">
 <kw name="Input Text" owner="SeleniumLibrary">
 <msg time="2024-08-16T16:21:22.257197" level="INFO">Typing text 'admin' into text field 'name:username'.</msg>
-<arg>${input_username}</arg>
+<arg>--{input_username}</arg>
 <arg>admin</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <status status="PASS" start="2024-08-16T16:21:22.256681" elapsed="0.156023"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <msg time="2024-08-16T16:21:22.413552" level="INFO">Typing text 'sandbox' into text field 'name:password'.</msg>
-<arg>${input_password}</arg>
+<arg>--{input_password}</arg>
 <arg>sandbox</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <status status="PASS" start="2024-08-16T16:21:22.413126" elapsed="0.143046"/>
@@ -32,7 +32,7 @@
 <kw name="Clicar em Acessar">
 <kw name="Click Element" owner="SeleniumLibrary">
 <msg time="2024-08-16T16:21:22.558420" level="INFO">Clicking element 'id:loginbtn'.</msg>
-<arg>${button_Acessar}</arg>
+<arg>--{button_Acessar}</arg>
 <doc>Click the element identified by ``locator``.</doc>
 <status status="PASS" start="2024-08-16T16:21:22.557862" elapsed="1.263097"/>
 </kw>

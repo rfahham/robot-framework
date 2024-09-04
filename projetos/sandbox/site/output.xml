@@ -8,7 +8,7 @@
 <msg time="2024-08-16T16:18:05.368996" level="INFO">Cannot capture screenshot because no browser is open.</msg>
 <msg time="2024-08-16T16:18:05.369147" level="FAIL">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
 </msg>
-<arg>${url}</arg>
+<arg>--{url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <status status="FAIL" start="2024-08-16T16:18:00.913938" elapsed="4.456455">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location

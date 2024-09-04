@@ -5,7 +5,7 @@
 <kw name="Given access youtube site">
 <kw name="Open Browser" owner="SeleniumLibrary">
 <msg time="2024-08-22T14:19:26.164052" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
-<arg>${url}</arg>
+<arg>--{url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <status status="PASS" start="2024-08-22T14:19:26.163821" elapsed="3.742485"/>
@@ -21,8 +21,8 @@
 <kw name="When search for video name">
 <kw name="Input Text" owner="SeleniumLibrary">
 <msg time="2024-08-22T14:19:34.909189" level="INFO">Typing text 'daily working routine Lofi' into text field '//input[@id="search"]'.</msg>
-<arg>${Input_pesquisa}</arg>
-<arg>${nome_video}</arg>
+<arg>--{Input_pesquisa}</arg>
+<arg>--{nome_video}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <status status="PASS" start="2024-08-22T14:19:34.908321" elapsed="0.332138"/>
 </kw>
@@ -37,7 +37,7 @@
 <kw name="And click in button search">
 <kw name="Click Element" owner="SeleniumLibrary">
 <msg time="2024-08-22T14:19:40.244849" level="INFO">Clicking element '//*[@id="search-icon-legacy"]'.</msg>
-<arg>${Button_pesquisar}</arg>
+<arg>--{Button_pesquisar}</arg>
 <doc>Click the element identified by ``locator``.</doc>
 <status status="PASS" start="2024-08-22T14:19:40.243751" elapsed="0.256524"/>
 </kw>
@@ -45,14 +45,14 @@
 </kw>
 <kw name="And click in first option">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${video}</arg>
+<arg>--{video}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
 <status status="PASS" start="2024-08-22T14:19:40.501820" elapsed="1.700538"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <msg time="2024-08-22T14:19:42.203015" level="INFO">Clicking element '(//yt-formatted-string[@class="style-scope ytd-video-renderer"])[1]'.</msg>
-<arg>${video}</arg>
+<arg>--{video}</arg>
 <doc>Click the element identified by ``locator``.</doc>
 <status status="PASS" start="2024-08-22T14:19:42.202636" elapsed="0.563218"/>
 </kw>
@@ -66,14 +66,14 @@
 <status status="PASS" start="2024-08-22T14:19:42.766847" elapsed="20.000786"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${verificação}</arg>
+<arg>--{verificação}</arg>
 <arg>20</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
 <status status="PASS" start="2024-08-22T14:20:02.768084" elapsed="0.085302"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
 <msg time="2024-08-22T14:20:02.906480" level="INFO">Element '//*[@id="owner-sub-count"][contains(text(), "subscribers")]' is displayed.</msg>
-<arg>${verificação}</arg>
+<arg>--{verificação}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
 <status status="PASS" start="2024-08-22T14:20:02.853825" elapsed="0.052922"/>
 </kw>

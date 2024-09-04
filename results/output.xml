@@ -1,100 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.8.10 on linux)" generated="2024-09-03T22:20:05.137125" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.8.10 on linux)" generated="2024-09-04T13:54:28.296640" rpa="false" schemaversion="5">
 <suite id="s1" name="Robot-Framework" source="/home/rfahham/projetos/robot-framework">
 <suite id="s1-s1" name="Projetos" source="/home/rfahham/projetos/robot-framework/projetos">
-<suite id="s1-s1-s1" name="Tjmsp" source="/home/rfahham/projetos/robot-framework/projetos/tjmsp">
-<suite id="s1-s1-s1-s1" name="Tjmsp" source="/home/rfahham/projetos/robot-framework/projetos/tjmsp/tjmsp.robot">
-<test id="s1-s1-s1-s1-t1" name="Cenário 1: Consulta de Processos" line="34">
-<kw name="Acessar a home">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-03T22:20:05.428265" level="INFO">Opening browser 'chrome' to base url 'https://ww2.tjmsp.jus.br/p_processos.htm'.</msg>
-<arg>${url}</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-03T22:20:05.426871" elapsed="2.787078"/>
+<suite id="s1-s1-s1" name="Banco-Dados" source="/home/rfahham/projetos/robot-framework/projetos/banco-dados">
+<suite id="s1-s1-s1-s1" name="Banco" source="/home/rfahham/projetos/robot-framework/projetos/banco-dados/banco.robot">
+<test id="s1-s1-s1-s1-t1" name="Verificar Dados no banco de Dados" line="13">
+<kw name="Connect To Database" owner="DatabaseLibrary">
+<msg time="2024-09-04T13:54:28.370598" level="INFO">Connecting using : psycopg2.connect(database=horadoqa, user=-root, password=***, host=localhost, port=3306)</msg>
+<msg time="2024-09-04T13:54:28.379506" level="FAIL">OperationalError: connection to server at "localhost" (127.0.0.1), port 3306 failed: received invalid response to SSL negotiation: [
+</msg>
+<arg>psycopg2</arg>
+<arg>${DB_NAME}</arg>
+<arg>-${DB_USER}</arg>
+<arg>${DB_PASS}</arg>
+<arg>${DB_HOST}</arg>
+<arg>${DB_PORT}</arg>
+<doc>Loads the DB API 2.0 module given ``dbapiModuleName`` then uses it to
+connect to the database using provided parameters such as ``dbName``, ``dbUsername``, and ``dbPassword``.</doc>
+<status status="FAIL" start="2024-09-04T13:54:28.356889" elapsed="0.024404">OperationalError: connection to server at "localhost" (127.0.0.1), port 3306 failed: received invalid response to SSL negotiation: [
+</status>
 </kw>
-<status status="PASS" start="2024-09-03T22:20:05.425170" elapsed="2.789524"/>
+<kw name="Query" owner="DatabaseLibrary">
+<var>${resultado}</var>
+<arg>SELECT * FROM tabela_exemplo WHERE id=1</arg>
+<doc>Runs a query with the ``selectStatement`` and returns the result as a list of rows.
+The type of row values depends on the database module -
+usually they are tuples or tuple-like objects.</doc>
+<status status="NOT RUN" start="2024-09-04T13:54:28.382027" elapsed="0.000246"/>
 </kw>
-<kw name="Clicar Botão Advogados">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-03T22:20:08.217108" level="INFO">Clicking element '//*[@id="home"]/div[2]/div/div[4]/div/button[2]'.</msg>
-<arg>${Advogados}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-03T22:20:08.216207" elapsed="3.104095"/>
+<kw name="Log" owner="BuiltIn">
+<arg>${resultado}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-09-04T13:54:28.382971" elapsed="0.000230"/>
 </kw>
-<status status="PASS" start="2024-09-03T22:20:08.215380" elapsed="3.105310"/>
+<kw name="Disconnect From Database" owner="DatabaseLibrary">
+<doc>Disconnects from the database.</doc>
+<status status="NOT RUN" start="2024-09-04T13:54:28.383630" elapsed="0.000193"/>
 </kw>
-<kw name="Clicar no Nro. da OAB">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-03T22:20:11.322702" level="INFO">Clicking element '//*[@id="home"]/div[2]/div/div[4]/div[1]/button[1]'.</msg>
-<arg>${oab}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-03T22:20:11.321815" elapsed="0.093207"/>
-</kw>
-<status status="PASS" start="2024-09-03T22:20:11.321174" elapsed="0.094220"/>
-</kw>
-<kw name="Clicar em Número da OAB">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-03T22:20:11.417063" level="INFO">Typing text '123456' into text field '//*[@id="txt_nro_oab"]'.</msg>
-<arg>//*[@id="txt_nro_oab"]</arg>
-<arg>${numero-oab}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-03T22:20:11.416500" elapsed="0.171045"/>
-</kw>
-<status status="PASS" start="2024-09-03T22:20:11.415886" elapsed="0.172017"/>
-</kw>
-<kw name="Escolher Estado">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-03T22:20:11.590359" level="INFO">Clicking element '//*[@id="psq_oab"]/div[4]/div/select/option[20]'.</msg>
-<arg>//*[@id="psq_oab"]/div[4]/div/select/option[20]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-03T22:20:11.588927" elapsed="0.055593"/>
-</kw>
-<status status="PASS" start="2024-09-03T22:20:11.588379" elapsed="0.056539"/>
-</kw>
-<kw name="Clicar botão Enviar">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-03T22:20:11.646581" level="INFO">Clicking element '//*[@id="btn_enviar"]'.</msg>
-<arg>//*[@id="btn_enviar"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-03T22:20:11.646110" elapsed="0.142446"/>
-</kw>
-<status status="PASS" start="2024-09-03T22:20:11.645379" elapsed="0.143580"/>
-</kw>
-<kw name="Verificação">
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-09-03T22:20:11.824572" level="INFO">Element '//html/body[contains(text(), "The page cannot be displayed because an internal server error has occurred.")]' is displayed.</msg>
-<arg>${verificação}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-03T22:20:11.791213" elapsed="0.034767"/>
-</kw>
-<status status="PASS" start="2024-09-03T22:20:11.789859" elapsed="0.036620"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-09-03T22:20:11.827529" elapsed="0.086506"/>
-</kw>
-<status status="PASS" start="2024-09-03T22:20:05.421950" elapsed="6.492938"/>
+<status status="FAIL" start="2024-09-04T13:54:28.355495" elapsed="0.028900">OperationalError: connection to server at "localhost" (127.0.0.1), port 3306 failed: received invalid response to SSL negotiation: [
+</status>
 </test>
-<status status="PASS" start="2024-09-03T22:20:05.199332" elapsed="6.718529"/>
+<status status="FAIL" start="2024-09-04T13:54:28.336770" elapsed="0.050057"/>
 </suite>
-<status status="PASS" start="2024-09-03T22:20:05.188963" elapsed="6.744235"/>
+<status status="FAIL" start="2024-09-04T13:54:28.333235" elapsed="0.056027"/>
 </suite>
-<status status="PASS" start="2024-09-03T22:20:05.183073" elapsed="6.754822"/>
+<status status="FAIL" start="2024-09-04T13:54:28.330436" elapsed="0.064709"/>
 </suite>
-<status status="PASS" start="2024-09-03T22:20:05.142258" elapsed="6.798116"/>
+<status status="FAIL" start="2024-09-04T13:54:28.301415" elapsed="0.096278"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Robot-Framework">Robot-Framework</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Projetos">Robot-Framework.Projetos</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Tjmsp">Robot-Framework.Projetos.Tjmsp</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Tjmsp">Robot-Framework.Projetos.Tjmsp.Tjmsp</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robot-Framework">Robot-Framework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Projetos">Robot-Framework.Projetos</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Banco-Dados">Robot-Framework.Projetos.Banco-Dados</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Banco">Robot-Framework.Projetos.Banco-Dados.Banco</stat>
 </suite>
 </statistics>
 <errors>
