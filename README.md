@@ -4,6 +4,8 @@ Robot Framework é um framework de automação de código aberto para automaçã
 
 Documentação: https://robotframework.org/
 
+different_libraries: https://docs.robotframework.org/docs/different_libraries/database
+
 https://github.com/cunhafrederico/robot-realworld
 
 Palavras reservadas BDD
