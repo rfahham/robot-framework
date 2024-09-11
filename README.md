@@ -1,24 +1,11 @@
 # Robot Framework
 
-Robot Framework é um framework de automação de código aberto para automação de testes e automação de processos robóticos (RPA) . Ele é suportado pela Robot Framework Foundation e amplamente usado na indústria.
-
 Documentação: https://robotframework.org/
 
-different_libraries: https://docs.robotframework.org/docs/different_libraries/database
+Robot Framework é um framework de automação de código aberto para automação de testes e automação de processos robóticos (RPA). Ele é suportado pela Robot Framework Foundation e amplamente usado na indústria.
 
-https://github.com/cunhafrederico/robot-realworld
+Sua sintaxe amigável e versátil usa palavras-chave e suporta extensão por meio de bibliotecas em Python, Java e outras linguagens.
 
-Palavras reservadas BDD
+Ele se integra a outras ferramentas para automação abrangente sem taxas de licenciamento, reforçado por uma comunidade rica com centenas de bibliotecas de terceiros.
 
-    Given
-    When
-    And
-    Then
-
-Criando pasta com os Resultados
-
-```bash
-robot -d results <nome do projeto>
-```
-
-Próximo passo... [Install](install.md)
+Próximo passo... [Install](./docs/install.md)

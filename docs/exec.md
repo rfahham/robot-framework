@@ -6,6 +6,12 @@ A Partir de um arquivo já preparado
 ROBOT <nomedo arquivo>.robot
 ```
 
+Criando pasta com os Resultados
+
+```bash
+robot -d results <nome do projeto>
+```
+
 ## Podemos executar um cenário de um determinado projeto
 
 ```bash
@@ -42,3 +48,10 @@ Para executar
 ```bash
 robot -i regressivo <nome da pasta>
 ```
+
+Próximos passo...[Organizando o projeto em arquivos difetentes](organizando.md)
+
+
+
+https://github.com/cunhafrederico/robot-realworld
+

@@ -1,6 +1,13 @@
-# Installing Robot Framework
+# ROBOT
 
-## Instalar o Python
+## Dependências
+
+- python
+- pip
+- robot
+- biblioteca
+
+### Python
 
 [Página de Downloads do Python](]https://www.python.org/downloads/)
 
@@ -13,37 +20,35 @@ Python 3.10.12
 
 ## Instalar o PIP
 
-[Página de instalação do PIP](https://awari.com.br/instalar-pip-python-aprenda-como-utilizar-essa-poderosa-ferramenta-de-gerenciamento-de-pacotes-no-python/)
+```bash
+apt install python3.10-venv
+```
 
 Verificar a versão
 
 ```bash
-pip --version    
-pip 22.0.2 from /home/rfahham/projetos/robot-framework/venv/lib/python3.10/site-packages/pip (python 3.10)
+pip --version
 ```
 
-## Isolar o ambiente
-
-[instalando VENV](https://docs.python.org/pt-br/3/library/venv.html)
-
-## Um manual completo de instalação no linux
-
-[Manual]https://www.hostinger.com/tutorials/how-to-create-a-python-virtual-environment?utm_campaign=Generic-Tutorials-DSA|NT:Se|LO:BR-EN&utm_medium=ppc&gad_source=1&gclid=Cj0KCQjw2ou2BhCCARIsANAwM2EJ_s2OLV4b_h6wToOAglYVpIFCG00CZdh_f8SCMzZI9Q7xSW3L1skaAh4gEALw_wcB
-
-
-## Isolando ambiente
+### Isolando ambiente
 
 ```bash
 python3 -m venv ./venv && source venv/bin/activate
 ```
 
-## Instalação do robotframework
+Para sair do ambiente virtual 
+
+```bash
+deactivate
+```
+
+### Instalação do robotframework
 
 ```bash
 pip install robotframework
 ```
 
-To check that the installation was successful, run
+Verificar a versão
 
 ```bash
 robot --version
@@ -51,19 +56,23 @@ robot --version
 Robot Framework 7.0.1 (Python 3.10.12 on linux)
 ```
 
-## Bibliotecas no robot
+### Bibliotecas no robot
 
 ```bash
 pip install robotframework-seleniumlibrary
 ```
 
-## Database Library
+### different_libraries
+
+https://docs.robotframework.org/docs/different_libraries/database
+
+### Database Library
 
 ```bash
 pip install robotframework-databaselibrary
 ```
 
-## Instalando o webdriver
+### Instalando o webdriver
 
 Ele que faz a manipulação do browser
 
@@ -73,35 +82,8 @@ https://pypi.org/project/webdriver-manager/3.0.0/
 sudo pip install webdriver-manager 
 ```
 
-## Listar as bibliotecas
+### Instalar a extensão do ROBOT para o VSCODE
 
-```bash
-pip list
-```
-
-## Salvar a lista em um arquivo
-
-```bash
-pip freeze > requirements.txt
-```
-
-## Instalar as bibliotecas a partir do arquivo
-
-```bash
-pip install requirements.txt
-```
-
-## Extensão do VSCODE
-
-Robot Framework Intellisense
-
-## Instalação do driver do navegador
-
-https://developer.chrome.com/docs/chromedriver/downloads?hl=pt-br
-
-Saber a versão do Chrome 
-
-O Chrome está atualizado
-Versão 127.0.6533.120 (Versão oficial) 64 bits
+No vscode procurar por `Robot Framework Language Server`
 
 Próximo passo... [Estrutura do ROBOT](estrutura.md)

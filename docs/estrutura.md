@@ -6,20 +6,14 @@ Library  SeleniumLibrary
 
 ** Variables **
 
-
 ** Keywords **
-Abrir Site
-    Open Browser https://robotframework.org/ chrome
+Open Google site 
+    Open Browser    https://robotframework.org/    chrome
 
 ** Test Cases **
-Cenário 1: Acessando o site do Robot
-    Abrir Site
-```
-
-## Executando
-
-```bash
-robot <nome do arquivo.robot>
+Cenario 1: Test Google
+    Open Google site
+    Close Browser
 ```
 
 Próximo passo...[Executando Testes](exec.md)
