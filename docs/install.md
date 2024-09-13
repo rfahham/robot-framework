@@ -18,16 +18,10 @@ python3 --version
 Python 3.10.12
 ```
 
-## Instalar o PIP
+### Instalar o Gerenciador de ambiente virtual
 
 ```bash
 apt install python3.10-venv
-```
-
-Verificar a versão
-
-```bash
-pip --version
 ```
 
 ### Isolando ambiente
@@ -40,6 +34,19 @@ Para sair do ambiente virtual
 
 ```bash
 deactivate
+```
+
+### Instalar o pip
+
+```bash
+sudo apt install python3-pip
+```
+
+Verificar a versão
+
+```bash
+pip3 --version
+pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)
 ```
 
 ### Instalação do robotframework
