@@ -1,106 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-09-04T20:45:47.802753" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.8.10 on linux)" generated="2024-09-14T20:31:52.054359" rpa="false" schemaversion="5">
 <suite id="s1" name="Robot-Framework" source="/home/rfahham/projetos/robot-framework">
 <suite id="s1-s1" name="Projetos" source="/home/rfahham/projetos/robot-framework/projetos">
-<suite id="s1-s1-s1" name="Youtube-Bdd" source="/home/rfahham/projetos/robot-framework/projetos/youtube-bdd">
-<suite id="s1-s1-s1-s1" name="Youtube" source="/home/rfahham/projetos/robot-framework/projetos/youtube-bdd/youtube.robot">
-<test id="s1-s1-s1-s1-t1" name="Cenário 1: Executar vídeo do site do youtube" line="5">
-<kw name="Given access youtube site" owner="keywords">
+<suite id="s1-s1-s1" name="Robot" source="/home/rfahham/projetos/robot-framework/projetos/robot">
+<suite id="s1-s1-s1-s1" name="Robot" source="/home/rfahham/projetos/robot-framework/projetos/robot/robot.robot">
+<test id="s1-s1-s1-s1-t1" name="Cenario 1: Test Google" line="12">
+<kw name="Open Google site">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-04T20:45:48.105396" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
-<arg>${url}</arg>
+<msg time="2024-09-14T20:31:52.295251" level="INFO">Opening browser 'chrome' to base url 'https://robotframework.org/'.</msg>
+<arg>https://robotframework.org/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-04T20:45:48.104182" elapsed="7.709979"/>
+<status status="PASS" start="2024-09-14T20:31:52.294396" elapsed="8.393751"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-04T20:46:00.816396" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-04T20:45:55.814931" elapsed="5.001846"/>
-</kw>
-<status status="PASS" start="2024-09-04T20:45:48.101932" elapsed="12.715126"/>
-</kw>
-<kw name="When search for video name" owner="keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-04T20:46:00.820254" level="INFO">Typing text 'daily working routine Lofi' into text field '//input[@id="search"]'.</msg>
-<arg>${Input_pesquisa}</arg>
-<arg>${nome_video}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-04T20:46:00.819259" elapsed="0.305957"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-04T20:46:06.127277" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-04T20:46:01.126082" elapsed="5.003440"/>
-</kw>
-<status status="PASS" start="2024-09-04T20:46:00.818176" elapsed="5.311828"/>
-</kw>
-<kw name="And click in button search" owner="keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-04T20:46:06.134617" level="INFO">Clicking element '//*[@id="search-icon-legacy"]'.</msg>
-<arg>${Button_pesquisar}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-04T20:46:06.133039" elapsed="0.246397"/>
-</kw>
-<status status="PASS" start="2024-09-04T20:46:06.131478" elapsed="0.249550"/>
-</kw>
-<kw name="And click in first option" owner="keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${video}</arg>
-<arg>10</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-04T20:46:06.383972" elapsed="2.321506"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-04T20:46:08.706842" level="INFO">Clicking element '(//yt-formatted-string[@class="style-scope ytd-video-renderer"])[1]'.</msg>
-<arg>${video}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-04T20:46:08.706072" elapsed="0.580877"/>
-</kw>
-<status status="PASS" start="2024-09-04T20:46:06.382608" elapsed="2.904851"/>
-</kw>
-<kw name="Then the video is play" owner="keywords">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-04T20:46:29.292541" level="INFO">Slept 20 seconds.</msg>
-<arg>20s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-04T20:46:09.289741" elapsed="20.003563"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${verificação}</arg>
-<arg>20</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-04T20:46:29.294585" elapsed="0.813778"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-09-04T20:46:30.588251" level="INFO">Element '//*[@id="owner-sub-count"][contains(text(), "subscribers")]' is displayed.</msg>
-<arg>${verificação}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-04T20:46:30.109256" elapsed="0.480439"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-04T20:46:50.593878" level="INFO">Slept 20 seconds.</msg>
-<arg>20s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-04T20:46:30.590468" elapsed="20.004376"/>
+<status status="PASS" start="2024-09-14T20:31:52.291184" elapsed="8.397894"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-09-04T20:46:50.595710" elapsed="0.197200"/>
+<status status="PASS" start="2024-09-14T20:32:00.689695" elapsed="0.101236"/>
 </kw>
-<status status="PASS" start="2024-09-04T20:46:09.288207" elapsed="41.505359"/>
-</kw>
-<status status="PASS" start="2024-09-04T20:45:48.100146" elapsed="62.694378"/>
+<status status="PASS" start="2024-09-14T20:31:52.289215" elapsed="8.503548"/>
 </test>
-<status status="PASS" start="2024-09-04T20:45:47.872418" elapsed="62.925476"/>
+<status status="PASS" start="2024-09-14T20:31:52.108943" elapsed="8.687235"/>
 </suite>
-<status status="PASS" start="2024-09-04T20:45:47.867809" elapsed="62.933988"/>
+<status status="PASS" start="2024-09-14T20:31:52.104378" elapsed="8.694776"/>
 </suite>
-<status status="PASS" start="2024-09-04T20:45:47.863007" elapsed="62.944063"/>
+<status status="PASS" start="2024-09-14T20:31:52.096936" elapsed="8.707588"/>
 </suite>
-<status status="PASS" start="2024-09-04T20:45:47.809721" elapsed="62.999654"/>
+<status status="PASS" start="2024-09-14T20:31:52.060396" elapsed="8.756896"/>
 </suite>
 <statistics>
 <total>
@@ -111,8 +38,8 @@
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Robot-Framework">Robot-Framework</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1" name="Projetos">Robot-Framework.Projetos</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Youtube-Bdd">Robot-Framework.Projetos.Youtube-Bdd</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Youtube">Robot-Framework.Projetos.Youtube-Bdd.Youtube</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Robot">Robot-Framework.Projetos.Robot</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Robot">Robot-Framework.Projetos.Robot.Robot</stat>
 </suite>
 </statistics>
 <errors>
